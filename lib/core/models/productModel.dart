@@ -5,15 +5,15 @@ import 'dart:async';
 
 class Product {
   String id;
-  int price;
+  String price;
   String name;
   String img;
 
-  Product(this.id, this.price, this.name,this.img);
+  Product({this.id, this.price, this.name,this.img});
 
   Product.fromMap(Map snapshot,String id) :
         id = id ?? '',
-        price = snapshot['price'] ?? 0,
+        price = snapshot['price'] ?? '',
         name = snapshot['name'] ?? '',
         img = snapshot['img'] ?? '';
 
