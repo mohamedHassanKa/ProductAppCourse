@@ -91,7 +91,7 @@ class _ModifyProductState extends State<ModifyProduct> {
                   if (_formKey.currentState.validate()) {
                     _formKey.currentState.save();
                     await productProvider.updateProduct(Product(name: title,price: price,img: productType.toLowerCase()),widget.product.id);
-                    Navigator.popUntil(context, ModalRoute.withName('/')) ;
+                    Navigator.pop(context) ;
                   }
                 },
                 child: Text('Modify Product', style: TextStyle(color: Colors.white)),
