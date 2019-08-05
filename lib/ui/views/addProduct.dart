@@ -17,7 +17,11 @@ class _AddProductState extends State<AddProduct> {
   Widget build(BuildContext context) {
     var productProvider = Provider.of<CRUDModel>(context) ;
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: Center(
+          child: Text('Add Product'),
+        ),
+      ),
       body: Padding(
         padding: EdgeInsets.all(12),
         child: Form(

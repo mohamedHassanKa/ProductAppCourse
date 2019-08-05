@@ -1,7 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import '../../locator.dart';
-import 'package:get_it/get_it.dart';
 import '../services/api.dart';
 import '../models/productModel.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
